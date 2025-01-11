@@ -7,7 +7,7 @@
       "use": "@vercel/python",
       "config": {
         "memory": 1024,  // Increase memory (in MB)
-        "maxDuration": 60  // Increase timeout duration (in seconds)
+        "maxDuration": 50  // Increase timeout duration (in seconds)
       }
     }
   ]
