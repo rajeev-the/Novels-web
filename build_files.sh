@@ -1,4 +1,4 @@
-import os
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')  # Ensure this path is correct
+echo "BUILD START"
+python3.9 -m pip install -r requirements.txt
+python3.9 manage.py collectstatic --noinput --clear
+echo "BUILD END"
